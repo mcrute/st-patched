@@ -1,7 +1,27 @@
-st - simple terminal
---------------------
-st is a simple terminal emulator for X which sucks less.
+st - simple terminal (patched)
+------------------------------
+This is *NOT* a fork of upstream st, it's rebased off of upstream with every
+release.
 
+st is a simple terminal emulator for X which sucks less. This repository carries
+a few patches that are not applied by default upstream. Those patches are:
+
+ * https://st.suckless.org/patches/ligatures/
+ * https://st.suckless.org/patches/boxdraw/
+ * https://st.suckless.org/patches/xresources/
+ * https://st.suckless.org/patches/vertcenter/
+ * https://st.suckless.org/patches/anysize/
+ * https://st.suckless.org/patches/clipboard/
+
+The patches are modified as necessary to apply alongside each other or to fix
+bugs in the upstream patches.
+
+This repository also carries some local patches to the Xresources patch which
+adjust the following properties of the patch:
+
+ * Change default colors
+ * Allow terminal name to be configured
+ * Allow cursor shape to be configured
 
 Requirements
 ------------
